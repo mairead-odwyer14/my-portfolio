@@ -32,6 +32,21 @@ export default function Home() {
           I have experience in Java, C, R and ARM Assembly.
           Outside of computer science, I enjoy reading, sports and baking delicious treats. 
         </p>
+        <div>
+          <h2>Experience</h2>
+          <h3>Research Assistant</h3>
+          <p>
+            I worked as a research assistant in the TCD's Complex Software Lab under Dr Anthony Ventresque.
+            My role was to annotate rugby matches using a performance analysis software, Hudl Sportscode.
+            The goal of the project was to use the data to determine if the height of tackle in rugby should be lower from the shoulder to the sternum.
+            The process was split into two elements, coding and labeling.
+            Coding meant that marking down possession, tackles, rucks, passes, kicks and referees' decisions.
+            Labeling was for tackles only, where aspects such as type of tackle, head contact for tackle and ball carrier, etc would be marked for each tackle.
+            I worked alongside a team of annotators, including a fellow undergrad, a PhD student and two professional rugby players.
+            I throughly enjoyed my time as a research assistant. I learned a lot on how these projects are conducted.
+            It was great to be able to talk to other memembers of the lab, mainly PhD students and post-doctoral researchers, as I was able to ask for advice and what their experience in computer science was like.
+          </p>
+        </div>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
       </footer>
