@@ -25,10 +25,12 @@ export default function Home() {
           LinkedIn
          </a>
         </div>
-
         <h2 className="font-sans">About Me!</h2>
-        <p className="mb-2">I am a third year Integrated Computer Science student at Trinity College Dublin.
-
+        <p className="mb-2">I am a third year Integrated Computer Science student at Trinity College Dublin (TCD). 
+          I am interested in algorithms and data structures, backend, mathematics and statistics.
+          I have worked as a research assistant at TCD's Complex Software Lab and I am currently a demonstrator for a statistics module.
+          I have experience in Java, C, R and ARM Assembly.
+          Outside of computer science, I enjoy reading, sports and baking delicious treats. 
         </p>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
