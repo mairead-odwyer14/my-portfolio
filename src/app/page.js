@@ -12,14 +12,35 @@ export default function Home() {
          <span>|</span>
          <a href="https://www.linkedin.com/in/mairead-o-dwyer-a89b4a305/" target="_blank"rel="noopener noreferrer"className="underline mt-2">LinkedIn </a>
         </div>
-        <div className="container mx-0 px-100 mt-4">
-        <h2 className="font-fascinate text-center text-purple-500">About Me!</h2>
-        <p className="rounded border-10 border-blue-200 mb-2">I am a third year Integrated Computer Science student at Trinity College Dublin (TCD). 
+
+
+
+        <div className="container mx-50 mt-8">
+        <h2 className="font-fascinate mx-100 text-purple-500">About Me!</h2>
+        <div className="flex justify-start items-start gap-6">
+          <Image
+            src="/coffee_cake.jpg"
+            alt="Coffe cake slice"
+            width={100}
+            height={100}
+            className="rounded-full border-5 border-blue-300 ml-0"
+            priority
+          />
+          <Image
+            src="/java.png"
+            alt="Java logo"
+            width={100}
+            height={100}
+            className="rounded-full border-5 border-blue-300 ml-0"
+            />
+
+        <p className="max-w-md rounded border-2 border-blue-200 p-4">I am a third year Integrated Computer Science student at Trinity College Dublin (TCD). 
           I am interested in algorithms and data structures, backend, mathematics and statistics.
           I have worked as a research assistant at TCD's Complex Software Lab and I am currently a demonstrator for a statistics module.
           I have experience in Java, C, R and ARM Assembly.
-          Outside of computer science, I enjoy reading, sports and baking delicious treats. 
+          Outside of computer science, I enjoy reading, watching films and sports as well as baking delicious treats. 
         </p>
+        </div>
         </div>
         <div className="mt-4">
           <h2>Experience</h2>
