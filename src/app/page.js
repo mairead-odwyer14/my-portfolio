@@ -21,7 +21,7 @@ export default function Home() {
             alt="Coffee cake slice"
             width={175}
             height={175}
-            className="rounded-full border-5 border-blue-300 ml-0"
+            className="rounded-full border-5 border-blue-300"
             priority
           />
           <Image
@@ -44,6 +44,12 @@ export default function Home() {
         height={175}
         className="rounded-full border-5 border-blue-300 ml-2"
         />
+        <Image
+        src="/Trinity-Main-Logo.jpg"
+        alt="Trinity College Dublin Logo"
+        width={200}
+        height={200}
+        className="rounded-full border-5 border-blue-300 mt-36"/>
         </div>
         <div className="mt-4">
           <h2>Experience</h2>
