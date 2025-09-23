@@ -37,6 +37,13 @@ export default function Home() {
           I have experience in Java, C, R and ARM Assembly.
           Outside of computer science, I enjoy reading, watching films and sports as well as baking delicious treats. 
         </p>
+        <Image
+        src="/programming.jpg"
+        alt="Programming languages"
+        width={175}
+        height={175}
+        className="rounded-full border-5 border-blue-300 ml-2"
+        />
         </div>
         <div className="mt-4">
           <h2>Experience</h2>
