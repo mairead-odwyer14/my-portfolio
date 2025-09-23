@@ -12,7 +12,7 @@ const fascinate = Fascinate_Inline({
 const audiowide = Audiowide({
   weight: "400",
   subsets: ["latin"],
-  variable: "--font-audiowide"
+  variable: "--font-audiowide",
 });
 export const metadata = {
   title: "My Portfolio",
@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${fascinate.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${fascinate.variable} ${audiowide.variable} antialiased`}
       >
         {children}
       </body>
