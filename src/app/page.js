@@ -4,43 +4,39 @@ export default function Home() {
   return (
     <div>
       <main>
+        <div>
         <h1 className="font-serif text-center text-xl" >Mairéad O'Dwyer</h1>
         <p className="font-serif text-center text-base">Integrated Computer Science student at Trinity College Dublin</p>
-        <div className="text-center gap-4 mt-2">
+        <div className="text-center gap-4 mt-2 mb-15">
          {/* <a href="/resume.pdf" className="border round-lg">Resume</a> */}
          <a href="https://github.com/mairead-odwyer14" target="_blank" rel="noopener noreferrer" className="underline">GitHub </a>
          <span>|</span>
          <a href="https://www.linkedin.com/in/mairead-o-dwyer-a89b4a305/" target="_blank"rel="noopener noreferrer"className="underline mt-2">LinkedIn </a>
         </div>
-
-
-
-        <div className="container mx-50 mt-8">
-        <h2 className="font-fascinate mx-100 text-purple-500">About Me!</h2>
-        <div className="flex justify-start items-start gap-6">
+        </div>
+        <h2 className="font-fascinate text-center text-purple-500">About Me!</h2>
+        <div className="flex justify-start items-start ml-5 mr-2">
           <Image
             src="/coffee_cake.jpg"
-            alt="Coffe cake slice"
-            width={100}
-            height={100}
+            alt="Coffee cake slice"
+            width={175}
+            height={175}
             className="rounded-full border-5 border-blue-300 ml-0"
             priority
           />
           <Image
-            src="/java.png"
-            alt="Java logo"
-            width={100}
-            height={100}
-            className="rounded-full border-5 border-blue-300 ml-0"
-            />
-
-        <p className="max-w-md rounded border-2 border-blue-200 p-4">I am a third year Integrated Computer Science student at Trinity College Dublin (TCD). 
+          src="/maths.jpg"
+          alt="Math equations on chalkboard"
+          width={175}
+          height={175}
+          className="rounded-full border-5 border-blue-300 mt-25 mr-2"
+          />
+        <p className="text-center mx-0 w-130 h-55 rounded border-2 border-blue-200 p-4">I am a third year Integrated Computer Science student at Trinity College Dublin (TCD). 
           I am interested in algorithms and data structures, backend, mathematics and statistics.
           I have worked as a research assistant at TCD's Complex Software Lab and I am currently a demonstrator for a statistics module.
           I have experience in Java, C, R and ARM Assembly.
           Outside of computer science, I enjoy reading, watching films and sports as well as baking delicious treats. 
         </p>
-        </div>
         </div>
         <div className="mt-4">
           <h2>Experience</h2>
