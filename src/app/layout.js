@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Fascinate_Inline } from "next/font/google";
+import { Audiowide } from "next/font/google";
 
 const fascinate = Fascinate_Inline({
   weight: "400",
@@ -8,6 +9,11 @@ const fascinate = Fascinate_Inline({
   variable: "--font-fascinate",
 });
 
+const audiowide = Audiowide({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-audiowide"
+});
 export const metadata = {
   title: "My Portfolio",
   description: "Mairéad O'Dwyer",
