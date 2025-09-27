@@ -1,5 +1,5 @@
 import Image from "next/image";
-import experienceCard from './components/experienceCard';
+import ExperienceCard from '../components/ExperienceCard';
 
   const experiences = [
     {
@@ -7,7 +7,7 @@ import experienceCard from './components/experienceCard';
       company: "Trinity College Dublin",
       duration: "May 2025 - September 2025",
       manager: "Dr Anthony Ventresque",
-      description: `I worked as a research assistant in the TCD's Complex Software Lab under Dr Anthony Ventresque.
+      description: `I worked asxw a research assistant in the TCD's Complex Software Lab under Dr Anthony Ventresque.
             My role was to annotate rugby matches using a performance analysis software, Hudl Sportscode.
             The goal of the project was to use the data to determine if the height of tackle in rugby should be lower from the shoulder to the sternum.
             The process was split into two elements, coding and labeling.
@@ -26,7 +26,7 @@ export default function Home() {
         <div>
         <h1 className="font-serif text-center text-xl" >Mairéad O'Dwyer</h1>
         <p className="font-serif text-center text-base">Integrated Computer Science student at Trinity College Dublin</p>
-        <div className="text-center gap-4 mt-2 mb-15">
+        <div className="text-center gap-4 mt-2">
          {/* <a href="/resume.pdf" className="border round-lg">Resume</a> */}
          <a href="https://github.com/mairead-odwyer14" target="_blank" rel="noopener noreferrer" className="underline">GitHub </a>
          <span>|</span>
@@ -40,7 +40,7 @@ export default function Home() {
             alt="Coffee cake slice"
             width={175}
             height={175}
-            className="rounded-full border-5 border-blue-300"
+            className="rounded-full border-blue-300"
             priority
           />
           <Image
@@ -48,9 +48,9 @@ export default function Home() {
           alt="Math equations on chalkboard"
           width={175}
           height={175}
-          className="rounded-full border-5 border-blue-300 mt-25 mr-2"
+          className="rounded-full border-blue-300 mr-2"
           />
-        <p className="text-center mx-0 w-130 h-55 rounded border-2 border-blue-200 p-4">I am a third year Integrated Computer Science student at Trinity College Dublin (TCD). 
+        <p className="text-center mx-0 rounded border-2 border-blue-200 p-4">I am a third year Integrated Computer Science student at Trinity College Dublin (TCD). 
           I am interested in algorithms and data structures, backend, mathematics and statistics.
           I have worked as a research assistant at TCD's Complex Software Lab and I am currently a demonstrator for a statistics module.
           I have experience in Java, C, R and ARM Assembly.
@@ -61,21 +61,21 @@ export default function Home() {
         alt="Programming languages"
         width={175}
         height={175}
-        className="rounded-full border-5 border-blue-300 ml-2"
+        className="rounded-full border-blue-300 ml-2"
         />
         <Image
         src="/Trinity-Main-Logo.jpg"
         alt="Trinity College Dublin Logo"
         width={200}
         height={200}
-        className="rounded-full border-5 border-blue-300 mt-36"/>
+        className="rounded-full border-blue-300 mt-36"/>
         </div>
 
         <section className="py-6">
           <h2 className="font-audiowide p-4">Experience</h2>
           <div className="flex flex-wrap justify-center items-center p-4">
             {experiences.map((experience, index) => (
-              <experienceCard
+              <ExperienceCard
               key={index}
               title={experience.title}
               company={experience.company}
