@@ -1,4 +1,23 @@
 import Image from "next/image";
+import experienceCard from './components/experienceCard';
+
+  const experiences = [
+    {
+      title: "Research Assistant",
+      company: "Trinity College Dublin",
+      duration: "May 2025 - September 2025",
+      manager: "Dr Anthony Ventresque",
+      description: `I worked as a research assistant in the TCD's Complex Software Lab under Dr Anthony Ventresque.
+            My role was to annotate rugby matches using a performance analysis software, Hudl Sportscode.
+            The goal of the project was to use the data to determine if the height of tackle in rugby should be lower from the shoulder to the sternum.
+            The process was split into two elements, coding and labeling.
+            Coding meant that marking down possession, tackles, rucks, passes, kicks and referees' decisions.
+            Labeling was for tackles only, where aspects such as type of tackle, head contact for tackle and ball carrier, etc would be marked for each tackle.
+            I worked alongside a team of annotators, including a fellow undergrad, a PhD student and two professional rugby players.
+            I throughly enjoyed my time as a research assistant. I learned a lot on how these projects are conducted.
+            It was great to be able to talk to other memembers of the lab, mainly PhD students and post-doctoral researchers, as I was able to ask for advice and what their experience in computer science was like.`,    
+    },
+  ];
 
 export default function Home() {
   return (
@@ -51,21 +70,22 @@ export default function Home() {
         height={200}
         className="rounded-full border-5 border-blue-300 mt-36"/>
         </div>
-        <div className="mt-4">
-          <h2>Experience</h2>
-          <h3>Research Assistant</h3>
-          <p>
-            I worked as a research assistant in the TCD's Complex Software Lab under Dr Anthony Ventresque.
-            My role was to annotate rugby matches using a performance analysis software, Hudl Sportscode.
-            The goal of the project was to use the data to determine if the height of tackle in rugby should be lower from the shoulder to the sternum.
-            The process was split into two elements, coding and labeling.
-            Coding meant that marking down possession, tackles, rucks, passes, kicks and referees' decisions.
-            Labeling was for tackles only, where aspects such as type of tackle, head contact for tackle and ball carrier, etc would be marked for each tackle.
-            I worked alongside a team of annotators, including a fellow undergrad, a PhD student and two professional rugby players.
-            I throughly enjoyed my time as a research assistant. I learned a lot on how these projects are conducted.
-            It was great to be able to talk to other memembers of the lab, mainly PhD students and post-doctoral researchers, as I was able to ask for advice and what their experience in computer science was like.
-          </p>
-        </div>
+
+        <section className="py-6">
+          <h2 className="font-audiowide p-4">Experience</h2>
+          <div className="flex flex-wrap justify-center items-center p-4">
+            {experiences.map((experience, index) => (
+              <experienceCard
+              key={index}
+              title={experience.title}
+              company={experience.company}
+              duration={experience.duration}
+              manager={experience.manager}
+              description={experience.description}
+              />
+            ))}
+          </div>
+        </section>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
       </footer>
