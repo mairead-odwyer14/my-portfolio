@@ -45,6 +45,7 @@ export default function Home() {
          <a href="https://www.linkedin.com/in/mairead-o-dwyer-a89b4a305/" target="_blank"rel="noopener noreferrer"className="underline mt-2">LinkedIn </a>
         </div>
         </div>
+        <section id="about">
         <h2 className="font-fascinate text-center text-purple-500">About Me!</h2>
         <div className="flex justify-start items-start ml-5">
           <Image
@@ -82,8 +83,8 @@ export default function Home() {
         height={200}
         className="rounded-full border-5 border-blue-300 mt-36"/>
         </div>
-
-        <section className="py-6 bg-purple-100">
+        </section>
+        <section id="experience" className="py-6 bg-purple-100">
           <h1 className="font-audiowide p-4 text-2xl">Experience</h1>
           <div className="flex flex-wrap justify-center items-center p-4 gap-6">
             {experiences.map((experience, index) => (
