@@ -24,6 +24,12 @@ export default function HeaderCard(){
                     </a>
                 </div>
             </div>
+
+            <nav className="flex justify-center space-x-6 border-t pt-4 bg-pink-100">
+                <a href="#about" className="underline hover:bg-pink-200">About</a>
+                <a href="#experience" className="underline hover:bg-pink-200">Experiences</a>
+                <a href="#projects" className="underline hover:bg-pink-200">Projects</a>
+            </nav>
         </header>
     )
 }
