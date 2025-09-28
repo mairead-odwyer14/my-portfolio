@@ -2,12 +2,24 @@ import Image from "next/image";
 import ExperienceCard from '../components/ExperienceCard';
 
   const experiences = [
+        {
+      title: "Module Demonstrator",
+      company: "Trinity College Dublin",
+      duration: "October 2025 - Present",
+      manager: "N/A",
+      description: `I am currently working as a demonstrator for the module STU23501 Probability and Theortical Statistics I. 
+                    It is a probability module for second-year mathematics students.
+                    My role is to run tutorials twice a week for the students.
+                    During these tutorials, I work through solutions for tutorial problem sheets given to the student by the lecturer.
+                    I also answer any questions regarding the material covered in the tutorial and/or class.
+                    I will also be covering the exam paper for the module from last year to help prepare the class for the exam.`,
+    },
     {
       title: "Research Assistant",
       company: "Trinity College Dublin",
       duration: "May 2025 - September 2025",
       manager: "Dr Anthony Ventresque",
-      description: `I worked asxw a research assistant in the TCD's Complex Software Lab under Dr Anthony Ventresque.
+      description: `I worked as a research assistant in the TCD's Complex Software Lab under Dr Anthony Ventresque.
             My role was to annotate rugby matches using a performance analysis software, Hudl Sportscode.
             The goal of the project was to use the data to determine if the height of tackle in rugby should be lower from the shoulder to the sternum.
             The process was split into two elements, coding and labeling.
