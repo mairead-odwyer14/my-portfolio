@@ -46,13 +46,13 @@ export default function Home() {
         </div>
         </div>
         <h2 className="font-fascinate text-center text-purple-500">About Me!</h2>
-        <div className="flex justify-start items-start ml-5 mr-2">
+        <div className="flex justify-start items-start ml-5">
           <Image
             src="/coffee_cake.jpg"
             alt="Coffee cake slice"
             width={175}
             height={175}
-            className="rounded-full border-blue-300"
+            className="rounded-full border-5 border-blue-300"
             priority
           />
           <Image
@@ -60,7 +60,7 @@ export default function Home() {
           alt="Math equations on chalkboard"
           width={175}
           height={175}
-          className="rounded-full border-blue-300 mr-2"
+          className="rounded-full border-5 border-blue-300 mr-2 mt-22"
           />
         <p className="text-center mx-0 rounded border-2 border-blue-200 p-4">I am a third year Integrated Computer Science student at Trinity College Dublin (TCD). 
           I am interested in algorithms and data structures, backend, mathematics and statistics.
@@ -73,19 +73,19 @@ export default function Home() {
         alt="Programming languages"
         width={175}
         height={175}
-        className="rounded-full border-blue-300 ml-2"
+        className="rounded-full border-5 border-blue-300 ml-2"
         />
         <Image
         src="/Trinity-Main-Logo.jpg"
         alt="Trinity College Dublin Logo"
         width={200}
         height={200}
-        className="rounded-full border-blue-300 mt-36"/>
+        className="rounded-full border-5 border-blue-300 mt-36"/>
         </div>
 
-        <section className="py-6">
-          <h2 className="font-audiowide p-4">Experience</h2>
-          <div className="flex flex-wrap justify-center items-center p-4">
+        <section className="py-6 bg-purple-100">
+          <h1 className="font-audiowide p-4 text-2xl">Experience</h1>
+          <div className="flex flex-wrap justify-center items-center p-4 gap-6">
             {experiences.map((experience, index) => (
               <ExperienceCard
               key={index}
