@@ -18,7 +18,7 @@ export default function HeaderCard(){
                         href="https://www.linkedin.com/in/mairead-o-dwyer-a89b4a305/" 
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="underline mt-2"
+                        className="underline"
                     >
                         LinkedIn 
                     </a>
