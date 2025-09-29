@@ -25,10 +25,10 @@ export default function HeaderCard(){
                 </div>
             </div>
 
-            <nav className="flex justify-center space-x-6 border-t pt-4 bg-blue-100">
-                <a href="#about" className="rounded-md px-3 py-1 text-slate-900 hover:underline hover:bg-blue-200">About</a>
-                <a href="#experience" className="rounded-md px-3 py-1 text-slate-900 hover:underline hover:bg-blue-200">Experiences</a>
-                <a href="#projects" className="rounded-md px-3 py-1 text-slate-900 hover:underline hover:bg-blue-200">Projects</a>
+            <nav className="flex justify-center space-x-6 border-t pt-4">
+                <a href="#about" className="rounded-md px-3 py-1 text-slate-900 bg-blue-100 hover:underline hover:bg-blue-200">About</a>
+                <a href="#experience" className="rounded-md px-3 py-1 text-slate-900 bg-blue-100 hover:underline hover:bg-blue-200">Experiences</a>
+                <a href="#projects" className="rounded-md px-3 py-1 text-slate-900 bg-blue-100 hover:underline hover:bg-blue-200">Projects</a>
             </nav>
         </header>
     )
