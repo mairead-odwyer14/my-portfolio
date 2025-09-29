@@ -1,6 +1,6 @@
 export default function HeaderCard(){
     return(
-        <header className="bg-blue-100 w-full">
+        <header className="w-full">
             <div className="text-center mb-5">
                 <h1 className="font-serif text-center text-xl" >Mairéad O'Dwyer</h1>
                 <p className="font-serif text-center text-base">Integrated Computer Science student at Trinity College Dublin</p>
@@ -25,10 +25,10 @@ export default function HeaderCard(){
                 </div>
             </div>
 
-            <nav className="flex justify-center space-x-6 border-t pt-4 bg-pink-100">
-                <a href="#about" className="underline hover:bg-pink-200">About</a>
-                <a href="#experience" className="underline hover:bg-pink-200">Experiences</a>
-                <a href="#projects" className="underline hover:bg-pink-200">Projects</a>
+            <nav className="flex justify-center space-x-6 border-t pt-4 bg-blue-100">
+                <a href="#about" className="underline hover:bg-slate-200">About</a>
+                <a href="#experience" className="underline hover:bg-slate-200">Experiences</a>
+                <a href="#projects" className="underline hover:bg-slate-200">Projects</a>
             </nav>
         </header>
     )
