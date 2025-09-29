@@ -63,7 +63,7 @@ export default function Home() {
           I have experience in Java, C, R and ARM Assembly.
           Outside of computer science, I enjoy reading, watching films and sports as well as baking delicious treats. 
         </p>
-        <div className="mt-6 flex flex-wrap gap-2 bg-slate-200">
+        <div className="rounded-md mt-6 flex flex-wrap gap-2 bg-slate-200 px-10">
           <p>Java</p>
           <span>|</span>
           <p>C</p>
