@@ -38,11 +38,11 @@ export default function Home() {
       <HeaderCard />
       <main>
         <section id="about" className="scroll-mt-24 py-10 bg-cyan-100">
-        <div className="max-w-6xl mx-auto px-4">
+        <div className="px-4">
         <h2 className="font-fascinate text-center text-purple-500 text-3xl md:text-4xl mb-6">About Me!</h2>
 
-        <div className="flex justify-between flex-col md:flex-row items-center md:items-start gap-6">
-          <div className="flex gap-4">
+        <div className="flex flex-col md:flex-row items-start justify-between gap-8 md:gap-12 xl:gap-16">
+          <div className="flex gap-4 self-start shrink-0">
           <Image
             src="/coffee_cake.jpg"
             alt="Coffee cake slice"
@@ -59,7 +59,7 @@ export default function Home() {
             className="rounded-full border-5 border-blue-300 object-cover"
           />
           </div>
-          <div className="w-full md:basis-1/2 lg:basis-3/5 xl:basis-2/3">
+          <div className="w-full md:basis-1/2 lg:basis-3/5 xl:basis-2/3 md:mx-2">
         <p className="w-full rounded border-2 border-blue-200 p-6 bg-teal-100 leading-relaxed text-base md:text-lg">I am a third year Integrated Computer Science student at Trinity College Dublin (TCD). 
           I am interested in algorithms and data structures, backend, mathematics and statistics.
           I have worked as a research assistant at TCD's Complex Software Lab and I am currently a demonstrator for a statistics module.
@@ -67,7 +67,7 @@ export default function Home() {
           Outside of computer science, I enjoy reading, watching films and sports as well as baking delicious treats. 
         </p>
         </div>
-        <div className="flex gap-4">
+        <div className="flex gap-4 ml-auto self-start shrink-0">
         <Image
           src="/programming.jpg"
           alt="Programming languages"
@@ -78,8 +78,8 @@ export default function Home() {
         <Image
           src="/Trinity-Main-Logo.jpg"
           alt="Trinity College Dublin Logo"
-          width={200}
-          height={200}
+          width={175}
+          height={175}
           className="rounded-full border-5 border-blue-300 object-cover"/>
         </div>
         </div>
