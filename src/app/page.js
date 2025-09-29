@@ -85,7 +85,7 @@ export default function Home() {
         </div>
         </div>
         </section>
-        <section id="experience" className="py-6 bg-purple-100">
+        <section id="experience" className="scroll-mt-24 py-6 bg-purple-100">
           <h1 className="font-audiowide p-4 text-2xl">Experience</h1>
           <div className="flex flex-wrap justify-center items-center p-4 gap-6">
             {experiences.map((experience, index) => (
@@ -99,6 +99,13 @@ export default function Home() {
               />
             ))}
           </div>
+        </section>
+        <section id="projects" className="scroll=mt-24 py-6 bg-pink-100">
+          <h1 className="font-bitcount p-4 text-2xl">Projects</h1>
+          <div className="flex flex-wrap justify-center items-center p-4 gap-6">
+            
+          </div>
+
         </section>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
