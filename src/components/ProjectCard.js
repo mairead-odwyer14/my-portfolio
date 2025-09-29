@@ -1,13 +1,14 @@
-const ProjectCard = ({title, tools, duration, intro, contributions = []}) => {
+const ProjectCard = ({title, tools, duration, contributions = []}) => {
         const toItems = (v) => {
             if (Array.isArray(v)) return v;
             if (typeof v === "string")
-                return v.split("/\r?\n/").map(s => s.trim()).filter(Boolean).map(s => s.replace("/^[-*•]\s+/", ""));
+                return v.split(/\r?\n/).map(s => s.trim()).filter(Boolean).map(s => s.replace(/^[-*•]\s+/, ""));
             return [];
         };
+        const items = toItems(contributions);
     return(
         <div className="relative bg-purple-100 rounded-lg shadow-md p-6 w-full max-w-7xl mx-auto transform">
-            <h3 className="text-xl font- mb-1">{title}</h3>
+            <h3 className="text-xl font-bold mb-1">{title}</h3>
             <div className="flex flex-row justify-between w-full">
                 <span className="italic text-lg">{tools}</span>
                 <span className="italic text-lg">{duration}</span>
