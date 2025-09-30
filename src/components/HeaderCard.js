@@ -5,7 +5,7 @@ export default function HeaderCard(){
                 <h1 className="font-serif text-center text-xl" >Mairéad O'Dwyer</h1>
                 <p className="font-serif text-center text-base">Integrated Computer Science student at Trinity College Dublin</p>
                 <div className="flex justify-center gap-4 mt-2">
-                    <a 
+                    <a
                         href="https://github.com/mairead-odwyer14" 
                         target="_blank" 
                         rel="noopener noreferrer" 
@@ -21,6 +21,16 @@ export default function HeaderCard(){
                         className="rounded-md px-3 py-1 text-slate-700 hover:bg-slate-100 hover:text-slate-900 hover:underline"
                     >
                         LinkedIn 
+                    </a>
+                    <span>|</span>
+                    <a
+                        href="/Mairead-O'Dwyer-Resume.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="rounded-md px-3 py-1 text-slate-700 hover:bg-slate-100 hover:text-slate-900 hover:underline"
+                        aria-label="View resume PDF in a new tab"
+                    >
+                        Résumé
                     </a>
                 </div>
             </div>
