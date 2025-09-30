@@ -1,3 +1,5 @@
+import { Mail, Phone } from "lucide-react";
+
 export default function Footer () {
     return (
         <footer className="w-full bg-blue-100 border-t mt-12">
@@ -5,23 +7,22 @@ export default function Footer () {
                 <div className="space-y-1 text-slate-700">
                     <p className="font-medium">Mairead O'Dwyer</p>
                     <p>Integrated Computer Science student at Trinity College Dublin</p>
-                    <p>
-                        <a
+                </div>
+                <div className="flex justify-center gap-8 text-slate-600">
+                    <a
                         href="mailto:scrahanagnave8@gmail.com"
-                        className="hover:underline hover:text-blue-900"
+                        className="flex items-center gap-2 hover:underline hover:text-blue-900"
                         >
-                            scrahanagnave8@gmail.com
+                            <Mail size={18} />scrahanagnave8@gmail.com
                         </a>
-                    </p>
-                    <p>
+
                         <a
                         href="tel:+3530874466402"
-                        className="hover:underline hover:text-blue-900"
+                        className="flex items-center gap-2 hover:underline hover:text-blue-900"
                         >
-                            +353 087 446 6402
+                            <Phone size={18} /> +353 087 446 6402
                         </a>
-                    </p>
-                </div>
+                    </div>
             </div>
         </footer>
     );
