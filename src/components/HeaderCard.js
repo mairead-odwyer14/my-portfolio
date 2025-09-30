@@ -1,3 +1,4 @@
+import {Github, Linkedin, File} from "lucide-react";
 export default function HeaderCard(){
     return(
         <header className="w-full">
@@ -9,28 +10,28 @@ export default function HeaderCard(){
                         href="https://github.com/mairead-odwyer14" 
                         target="_blank" 
                         rel="noopener noreferrer" 
-                        className="rounded-md px-3 py-1 text-slate-700 hover:bg-slate-100 hover:text-slate-900 hover:underline"
+                        className="rounded-md flex items-center py-1 text-slate-700 hover:bg-slate-100 hover:text-slate-900 hover:underline"
                     >
-                        GitHub 
+                        <Github size={18} /> GitHub 
                     </a>
                     <span>|</span>
                     <a 
                         href="https://www.linkedin.com/in/mairead-o-dwyer-a89b4a305/" 
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="rounded-md px-3 py-1 text-slate-700 hover:bg-slate-100 hover:text-slate-900 hover:underline"
+                        className="rounded-md flex items-center gap-2 py-1 text-slate-700 hover:bg-slate-100 hover:text-slate-900 hover:underline"
                     >
-                        LinkedIn 
+                        <Linkedin size={18} /> LinkedIn 
                     </a>
                     <span>|</span>
                     <a
                         href="/Mairead-O'Dwyer-Resume.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="rounded-md px-3 py-1 text-slate-700 hover:bg-slate-100 hover:text-slate-900 hover:underline"
+                        className="rounded-md flex items-center gap-2 py-1 text-slate-700 hover:bg-slate-100 hover:text-slate-900 hover:underline"
                         aria-label="View resume PDF in a new tab"
                     >
-                        Résumé
+                       <File size={18} /> Résumé
                     </a>
                 </div>
             </div>
