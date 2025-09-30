@@ -33,6 +33,7 @@ import Footer from '../components/Footer';
         "Implemented Tailwind utility classes for consistent design.",
         "Will continue to update with new projects and experiences."
       ],
+      link: "https://github.com/mairead-odwyer14/my-portfolio"
     },
     {
       title: "TCD Student Job Portal",
@@ -44,6 +45,7 @@ import Footer from '../components/Footer';
         "Verified REST endpoints using Postman to ensure correct functionality.",
         "Contributed to team demos."
       ],
+      link: "https://gitlab.scss.tcd.ie/sweng25_group19/sweng25_group19-tcdstudentjobportal",
     },
   ];
 
@@ -117,6 +119,7 @@ export default function Home() {
               duration={project.duration}
               intro={project.intro}
               contributions={project.contributions}
+              link={project.link}
               />
             ))}
           </div>
