@@ -2,6 +2,7 @@ import Image from "next/image";
 import ExperienceCard from '../components/ExperienceCard';
 import HeaderCard from '@/components/HeaderCard';
 import ProjectCard from '../components/ProjectCard';
+import Footer from '../components/Footer';
 
   const experiences = [
         {
@@ -122,8 +123,7 @@ export default function Home() {
 
         </section>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-      </footer>
+      <Footer />
     </div>
   );
 }
