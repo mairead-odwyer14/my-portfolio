@@ -1,3 +1,4 @@
+import {MousePointer2} from "lucide-react";
 const ProjectCard = ({title, tools, duration, contributions = [], link}) => {
         const toItems = (v) => {
             if (Array.isArray(v)) return v;
@@ -19,14 +20,14 @@ const ProjectCard = ({title, tools, duration, contributions = [], link}) => {
             </ul>
         )}
         {link && (
-            <div className="flex flex-row justify-between w-full">
+            <div className="text-center mt-4">
                 <a 
-                href="{link}"
+                href={link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-700 hover:underline hover:text-blue-900"
+                className="inline-flex items-center gap-2 text-blue-700 hover:underline hover:text-blue-900"
                 >
-                    Link to repository
+                    Link to repository<MousePointer2 size={18} />
                 </a>
             </div>
         )}
