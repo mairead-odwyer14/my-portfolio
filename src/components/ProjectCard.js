@@ -1,4 +1,4 @@
-const ProjectCard = ({title, tools, duration, contributions = []}) => {
+const ProjectCard = ({title, tools, duration, contributions = [], link}) => {
         const toItems = (v) => {
             if (Array.isArray(v)) return v;
             if (typeof v === "string")
@@ -17,6 +17,18 @@ const ProjectCard = ({title, tools, duration, contributions = []}) => {
                 <ul className="mt-3 list-disc pl-6 space-y-1">
                     {items.map((item, i) => <li key={i}>{item}</li>)}
             </ul>
+        )}
+        {link && (
+            <div className="flex flex-row justify-between w-full">
+                <a 
+                href="{link}"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-700 hover:underline hover:text-blue-900"
+                >
+                    Link to repository
+                </a>
+            </div>
         )}
         </div>
     );
